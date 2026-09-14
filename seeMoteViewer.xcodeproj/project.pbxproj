@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15D3700F84584815DD6BC1B6 /* AccessoryTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC55D74063CCF4C03F88D10 /* AccessoryTracker.swift */; };
+		1A88B4053032D7B800508F99 /* cap-202607152.referenceaccessory in Resources */ = {isa = PBXBuildFile; fileRef = 1A88B4033032D7B800508F99 /* cap-202607152.referenceaccessory */; };
+		1AF5604A304E90BA00A0E910 /* acessory3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1AF56048304E90BA00A0E910 /* acessory3.usdz */; };
+		1AF560543057CF2900A0E910 /* acessory2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1AF560533057CF2900A0E910 /* acessory2.usdz */; };
+		42E5BE47B3B94C3094F6079E /* SceneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14903101D246C3A476F1A9 /* SceneState.swift */; };
+		4A1B2C3D4E5F678901234569 /* ToggleImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B2C3D4E5F67890123456A /* ToggleImmersiveSpaceButton.swift */; };
+		4A1B2C3D4E5F67890123456B /* TrackingMode+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F678901234567C /* TrackingMode+Localization.swift */; };
+		51358C8CF982B44F151C0763 /* WorldOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048ABA47B9EDDB35165E7C21 /* WorldOverlayView.swift */; };
+		52AE43A62FFE711A0066F12B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 52AE43A52FFE711A0066F12B /* logo.png */; };
+		63A9F0EA7BB98050796B649A /* seeMoteViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9F0EA7BB98050796B6499 /* seeMoteViewerApp.swift */; };
+		63A9F0EA7BB98050796B649D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A9F0EA7BB98050796B649C /* Assets.xcassets */; };
+		68BB387F0EB57DD13736B8FB /* AnchorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFDDF351C89E0B87A8ABAC /* AnchorManager.swift */; };
+		70CA0F877105967AF26396CE /* HapticController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6942BB28BC52FD85E4A3C9D5 /* HapticController.swift */; };
+		711008C8DF40440E9A259345 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407B81FC724B0CA943F47C /* AppConfiguration.swift */; };
+		76730EE33167FE6BA5EB918E /* EntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D9F92082086E5D37BEE632 /* EntityFactory.swift */; };
+		7B3A6A3671537EF092D1ADB4 /* Logger+seeMote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D076982501BE1154E8353FB /* Logger+seeMote.swift */; };
+		7CB6308296A88303C55ED786 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAB4C00713B68970D638883 /* AppState.swift */; };
+		9D31C6D5D11D4652B32F02FC /* LocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CEA99250FEAD2982679C17 /* LocaleManager.swift */; };
+		A1B2C3D4E5F678901234567A /* AccessoryConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2D3E4F5A678901234567B /* AccessoryConnectionManager.swift */; };
+		B2C3D4E5F6A789012345678C /* TrackingSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F6A7B890123456789D /* TrackingSessionManager.swift */; };
+		C1D2E3F4G5H678901234567D /* CancellableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2D3E4F5A678901234567C /* CancellableTask.swift */; };
+		C3D4E5F6A7B890123456789E /* PreviewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6A7B8C901234567890F /* PreviewLoader.swift */; };
+		D4E5F6A7B8C9012345678910 /* ReplicaPlacementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6A7B8C9D012345678911A /* ReplicaPlacementController.swift */; };
+		DE8737791C83D9DD4DAC448D /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC43607A6C0D376E05016E3B /* ControlPanelView.swift */; };
+		E5F6A7B8C9D012345678911B /* HapticCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A7B8C9D0E12345678912BC /* HapticCoordinator.swift */; };
+		F8A1B2C3D4E5F67890123456B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 63A9F0EA7BB98050796B64AA /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		048ABA47B9EDDB35165E7C21 /* WorldOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOverlayView.swift; sourceTree = "<group>"; };
+		1A88B4033032D7B800508F99 /* cap-202607152.referenceaccessory */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cap-202607152.referenceaccessory"; sourceTree = "<group>"; };
+		1AF56048304E90BA00A0E910 /* acessory3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = acessory3.usdz; sourceTree = "<group>"; };
+		1AF560533057CF2900A0E910 /* acessory2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = acessory2.usdz; sourceTree = "<group>"; };
+		2BC55D74063CCF4C03F88D10 /* AccessoryTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryTracker.swift; sourceTree = "<group>"; };
+		3F14903101D246C3A476F1A9 /* SceneState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneState.swift; sourceTree = "<group>"; };
+		4A1B2C3D4E5F67890123456A /* ToggleImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImmersiveSpaceButton.swift; sourceTree = "<group>"; };
+		52AE43A52FFE711A0066F12B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		63A9F0EA7BB98050796B6496 /* seeMoteViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seeMoteViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A9F0EA7BB98050796B6499 /* seeMoteViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seeMoteViewerApp.swift; sourceTree = "<group>"; };
+		63A9F0EA7BB98050796B649B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A9F0EA7BB98050796B649C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A9F0EA7BB98050796B649E /* seeMoteViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = seeMoteViewer.entitlements; sourceTree = "<group>"; };
+		63A9F0EA7BB98050796B64AA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6942BB28BC52FD85E4A3C9D5 /* HapticController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticController.swift; sourceTree = "<group>"; };
+		6D076982501BE1154E8353FB /* Logger+seeMote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+seeMote.swift"; sourceTree = "<group>"; };
+		73407B81FC724B0CA943F47C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		86D9F92082086E5D37BEE632 /* EntityFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFactory.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F678901234567C /* TrackingMode+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackingMode+Localization.swift"; sourceTree = "<group>"; };
+		AEAB4C00713B68970D638883 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B1C2D3E4F5A678901234567B /* AccessoryConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryConnectionManager.swift; sourceTree = "<group>"; };
+		B1C2D3E4F5A678901234567C /* CancellableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableTask.swift; sourceTree = "<group>"; };
+		C2CEA99250FEAD2982679C17 /* LocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleManager.swift; sourceTree = "<group>"; };
+		C3D4E5F6A7B890123456789D /* TrackingSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingSessionManager.swift; sourceTree = "<group>"; };
+		D4E5F6A7B8C901234567890F /* PreviewLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoader.swift; sourceTree = "<group>"; };
+		DC43607A6C0D376E05016E3B /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		DDAFDDF351C89E0B87A8ABAC /* AnchorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorManager.swift; sourceTree = "<group>"; };
+		E5F6A7B8C9D012345678911A /* ReplicaPlacementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaPlacementController.swift; sourceTree = "<group>"; };
+		F6A7B8C9D0E12345678912BC /* HapticCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63A9F0EA7BB98050796B6493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63A9F0EA7BB98050796B648D = {
+			isa = PBXGroup;
+			children = (
+				63A9F0EA7BB98050796B6498 /* seeMoteViewer */,
+				63A9F0EA7BB98050796B6497 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B6497 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63A9F0EA7BB98050796B6496 /* seeMoteViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B6498 /* seeMoteViewer */ = {
+			isa = PBXGroup;
+			children = (
+				63A9F0EA7BB98050796B6499 /* seeMoteViewerApp.swift */,
+				63A9F0EA7BB98050796B64A5 /* Core */,
+				63A9F0EA7BB98050796B64A6 /* Reality */,
+				63A9F0EA7BB98050796B64A7 /* Utilities */,
+				63A9F0EA7BB98050796B64A8 /* Views */,
+				63A9F0EA7BB98050796B64A9 /* Resources */,
+				63A9F0EA7BB98050796B649B /* Info.plist */,
+				63A9F0EA7BB98050796B64AA /* Localizable.xcstrings */,
+				63A9F0EA7BB98050796B649C /* Assets.xcassets */,
+				63A9F0EA7BB98050796B649E /* seeMoteViewer.entitlements */,
+			);
+			path = seeMoteViewer;
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B64A5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BC55D74063CCF4C03F88D10 /* AccessoryTracker.swift */,
+				B1C2D3E4F5A678901234567B /* AccessoryConnectionManager.swift */,
+				C3D4E5F6A7B890123456789D /* TrackingSessionManager.swift */,
+				D4E5F6A7B8C901234567890F /* PreviewLoader.swift */,
+				E5F6A7B8C9D012345678911A /* ReplicaPlacementController.swift */,
+				F6A7B8C9D0E12345678912BC /* HapticCoordinator.swift */,
+				73407B81FC724B0CA943F47C /* AppConfiguration.swift */,
+				AEAB4C00713B68970D638883 /* AppState.swift */,
+				6942BB28BC52FD85E4A3C9D5 /* HapticController.swift */,
+				C2CEA99250FEAD2982679C17 /* LocaleManager.swift */,
+				3F14903101D246C3A476F1A9 /* SceneState.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B64A6 /* Reality */ = {
+			isa = PBXGroup;
+			children = (
+				DDAFDDF351C89E0B87A8ABAC /* AnchorManager.swift */,
+				A1B2C3D4E5F678901234567C /* TrackingMode+Localization.swift */,
+				86D9F92082086E5D37BEE632 /* EntityFactory.swift */,
+			);
+			path = Reality;
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B64A7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6D076982501BE1154E8353FB /* Logger+seeMote.swift */,
+				B1C2D3E4F5A678901234567C /* CancellableTask.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B64A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC43607A6C0D376E05016E3B /* ControlPanelView.swift */,
+				4A1B2C3D4E5F67890123456A /* ToggleImmersiveSpaceButton.swift */,
+				048ABA47B9EDDB35165E7C21 /* WorldOverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63A9F0EA7BB98050796B64A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52AE43A52FFE711A0066F12B /* logo.png */,
+				1A88B4033032D7B800508F99 /* cap-202607152.referenceaccessory */,
+				1AF56048304E90BA00A0E910 /* acessory3.usdz */,
+				1AF560533057CF2900A0E910 /* acessory2.usdz */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A9F0EA7BB98050796B6495 /* seeMoteViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A9F0EA7BB98050796B64A4 /* Build configuration list for PBXNativeTarget "seeMoteViewer" */;
+			buildPhases = (
+				63A9F0EA7BB98050796B6492 /* Sources */,
+				63A9F0EA7BB98050796B6493 /* Frameworks */,
+				63A9F0EA7BB98050796B6494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = seeMoteViewer;
+			productName = seeMoteViewer;
+			productReference = 63A9F0EA7BB98050796B6496 /* seeMoteViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63A9F0EA7BB98050796B6490 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+			};
+			buildConfigurationList = 63A9F0EA7BB98050796B6491 /* Build configuration list for PBXProject "seeMoteViewer" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 63A9F0EA7BB98050796B648D;
+			productRefGroup = 63A9F0EA7BB98050796B6497 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63A9F0EA7BB98050796B6495 /* seeMoteViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63A9F0EA7BB98050796B6494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A9F0EA7BB98050796B649D /* Assets.xcassets in Resources */,
+				F8A1B2C3D4E5F67890123456B /* Localizable.xcstrings in Resources */,
+				52AE43A62FFE711A0066F12B /* logo.png in Resources */,
+				1AF560543057CF2900A0E910 /* acessory2.usdz in Resources */,
+				1AF5604A304E90BA00A0E910 /* acessory3.usdz in Resources */,
+				1A88B4053032D7B800508F99 /* cap-202607152.referenceaccessory in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63A9F0EA7BB98050796B6492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A9F0EA7BB98050796B649A /* seeMoteViewerApp.swift in Sources */,
+				15D3700F84584815DD6BC1B6 /* AccessoryTracker.swift in Sources */,
+				A1B2C3D4E5F678901234567A /* AccessoryConnectionManager.swift in Sources */,
+				B2C3D4E5F6A789012345678C /* TrackingSessionManager.swift in Sources */,
+				C3D4E5F6A7B890123456789E /* PreviewLoader.swift in Sources */,
+				D4E5F6A7B8C9012345678910 /* ReplicaPlacementController.swift in Sources */,
+				E5F6A7B8C9D012345678911B /* HapticCoordinator.swift in Sources */,
+				711008C8DF40440E9A259345 /* AppConfiguration.swift in Sources */,
+				7CB6308296A88303C55ED786 /* AppState.swift in Sources */,
+				42E5BE47B3B94C3094F6079E /* SceneState.swift in Sources */,
+				70CA0F877105967AF26396CE /* HapticController.swift in Sources */,
+				9D31C6D5D11D4652B32F02FC /* LocaleManager.swift in Sources */,
+				68BB387F0EB57DD13736B8FB /* AnchorManager.swift in Sources */,
+				76730EE33167FE6BA5EB918E /* EntityFactory.swift in Sources */,
+				4A1B2C3D4E5F67890123456B /* TrackingMode+Localization.swift in Sources */,
+				7B3A6A3671537EF092D1ADB4 /* Logger+seeMote.swift in Sources */,
+				C1D2E3F4G5H678901234567D /* CancellableTask.swift in Sources */,
+				DE8737791C83D9DD4DAC448D /* ControlPanelView.swift in Sources */,
+				4A1B2C3D4E5F678901234569 /* ToggleImmersiveSpaceButton.swift in Sources */,
+				51358C8CF982B44F151C0763 /* WorldOverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		63A9F0EA7BB98050796B649F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		63A9F0EA7BB98050796B64A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_0_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		63A9F0EA7BB98050796B64A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = seeMoteViewer/seeMoteViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4LNH3V2FRD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = seeMoteViewer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "seeMote Cap";
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = "This app tracks spatial accessories to display their position and orientation in your environment.";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover and connect to spatial accessories.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfrobottest.seeMoteCap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		63A9F0EA7BB98050796B64A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = seeMoteViewer/seeMoteViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4LNH3V2FRD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = seeMoteViewer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "seeMote Cap";
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = "This app tracks spatial accessories to display their position and orientation in your environment.";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover and connect to spatial accessories.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfrobot.seeMoteCap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63A9F0EA7BB98050796B6491 /* Build configuration list for PBXProject "seeMoteViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A9F0EA7BB98050796B649F /* Debug */,
+				63A9F0EA7BB98050796B64A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A9F0EA7BB98050796B64A4 /* Build configuration list for PBXNativeTarget "seeMoteViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A9F0EA7BB98050796B64A1 /* Debug */,
+				63A9F0EA7BB98050796B64A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63A9F0EA7BB98050796B6490 /* Project object */;
+}
