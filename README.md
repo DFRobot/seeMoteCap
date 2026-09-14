@@ -1,81 +1,79 @@
 # seeMoteViewer
 
-seeMote 通用空间配件查看器示例工程。
+An example project for the seeMote general-purpose spatial accessory viewer.
 
-本工程演示如何在 visionOS 27.0+ 应用中：
-- 发现并连接 `GCSpatialAccessory` 空间配件
-- 通过 `AccessoryTrackingProvider` 获取配件锚点
-- 在混合沉浸空间中显示配件位置、参考模型与数字复制品
-- 预览配件提供的 USDZ 参考模型或内置模型
+This project demonstrates how to build a visionOS 27.0+ app that:
+- Discovers and connects to `GCSpatialAccessory` spatial accessories
+- Retrieves accessory anchors through `AccessoryTrackingProvider`
+- Displays the accessory position, reference model, and digital replicas in a mixed immersive space
+- Previews either a USDZ reference model supplied by the accessory or a bundled model
 
-## 运行要求
+## Requirements
 
-- Xcode 27.0 beta 或更高版本
+- Xcode 27.0 beta or later
 - visionOS 27.0 SDK
-- Apple Vision Pro 或 visionOS 模拟器
+- Apple Vision Pro or the visionOS simulator
 
-## 首次打开工程
+## Opening the Project for the First Time
 
-如需详细的操作说明，请参见：https://wiki.dfrobot.com/dfr1285
+For detailed instructions, see: https://wiki.dfrobot.com/dfr1285
 
-1. 使用 Xcode 打开 `seeMoteViewer.xcodeproj`。
-2. 选中 `seeMoteViewer` target，进入 **Signing & Capabilities**：
-   - 将 **Team** 设置为你自己的 Apple Developer Team（或个人免费 Team）。
-   - 将 **Bundle Identifier** 改为属于你的唯一标识，例如 `com.yourcompany.seeMoteViewer`。
-3. 选择 visionOS 模拟器或连接 Apple Vision Pro 真机，按 `Cmd+R` 运行。
+1. Open `seeMoteViewer.xcodeproj` in Xcode.
+2. Select the `seeMoteViewer` target and open **Signing & Capabilities**:
+   - Set **Team** to your Apple Developer Team (or Personal Team).
+   - Change **Bundle Identifier** to a unique identifier that belongs to you, such as `com.yourcompany.seeMoteViewer`.
+3. Select a visionOS simulator or connect an Apple Vision Pro device, then press `Cmd+R` to run the app.
 
-## 工程结构
+## Project Structure
 
 ```
 seeMoteViewer/
 ├── Core/
-│   ├── AppState.swift                  # 应用全局状态容器
-│   ├── AppConfiguration.swift          # 应用静态配置
-│   ├── LocaleManager.swift             # 应用内语言切换
-│   ├── AccessoryConnectionManager.swift# 配件连接与断开监听
-│   ├── TrackingSessionManager.swift    # ARKit 授权、session 与追踪 provider 生命周期
-│   ├── AccessoryTracker.swift          # 视图层统一状态与操作外观
-│   ├── PreviewLoader.swift             # 预览模型加载
-│   ├── ReplicaPlacementController.swift# 数字复制品放置/清除信号
-│   ├── HapticController.swift          # 触觉引擎控制
-│   ├── HapticCoordinator.swift         # 触觉控制器生命周期协调
-│   └── SceneState.swift                # 沉浸空间状态
+│   ├── AppState.swift                  # Container for global app state
+│   ├── AppConfiguration.swift          # Static app configuration
+│   ├── LocaleManager.swift             # In-app language switching
+│   ├── AccessoryConnectionManager.swift# Accessory connection and disconnection monitoring
+│   ├── TrackingSessionManager.swift    # ARKit authorization, session, and tracking provider lifecycle
+│   ├── AccessoryTracker.swift          # Unified state and operations interface for the view layer
+│   ├── PreviewLoader.swift             # Preview model loading
+│   ├── ReplicaPlacementController.swift# Digital replica placement/removal signals
+│   ├── HapticController.swift          # Haptic engine control
+│   ├── HapticCoordinator.swift         # Haptic controller lifecycle coordination
+│   └── SceneState.swift                # Immersive space state
 ├── Reality/
-│   ├── EntityFactory.swift             # 实体工厂与可视化占位
-│   ├── AnchorManager.swift             # 锚点实体创建与管理
-│   └── TrackingMode+Localization.swift # 追踪模式与配件位置的本地化
+│   ├── EntityFactory.swift             # Entity factory and visualization placeholders
+│   ├── AnchorManager.swift             # Anchor entity creation and management
+│   └── TrackingMode+Localization.swift # Localization for tracking modes and accessory positions
 ├── Utilities/
-│   ├── Logger+seeMote.swift            # 日志扩展
-│   └── CancellableTask.swift           # 可取消任务包装
+│   ├── Logger+seeMote.swift            # Logging extensions
+│   └── CancellableTask.swift           # Cancellable task wrapper
 ├── Views/
-│   ├── ControlPanelView.swift          # 主控制面板
-│   ├── WorldOverlayView.swift          # 混合沉浸空间视图
-│   └── ToggleImmersiveSpaceButton.swift# 打开/关闭沉浸空间按钮
+│   ├── ControlPanelView.swift          # Main control panel
+│   ├── WorldOverlayView.swift          # Mixed immersive space view
+│   └── ToggleImmersiveSpaceButton.swift# Button for opening/closing the immersive space
 ├── Resources/
-│   ├── model1.usdz                     # 内置预览模型
-│   ├── logo.png                        # 应用图标/Logo
-│   └── cap-202607152.referenceaccessory# 参考配件文件
-├── Localizable.xcstrings               # 中英双语本地化
-├── Info.plist                          # 场景配置与参考配件类型声明
-└── seeMoteViewer.entitlements          # 沙盒与网络能力
+│   ├── model1.usdz                     # Bundled preview model
+│   ├── logo.png                        # App icon/logo
+│   └── cap-202607152.referenceaccessory# Reference accessory file
+├── Localizable.xcstrings               # Chinese and English localization
+├── Info.plist                          # Scene configuration and reference accessory type declarations
+└── seeMoteViewer.entitlements          # Sandbox and networking capabilities
 ```
 
-## 核心模块说明
+## Core Modules
 
-- **AccessoryConnectionManager**：监听 `GCSpatialAccessory.spatialAccessories`，管理连接状态并在设备变化时回调。
-- **TrackingSessionManager**：运行 `ARKitSession` 并管理 `AccessoryTrackingProvider`，暴露授权状态、追踪状态与最新锚点。
-- **AccessoryTracker**：组合连接、追踪、预览加载与复制品控制，作为视图层的单一入口。
-- **PreviewLoader**：支持加载配件提供的 `referenceaccessory` 内置 USDZ，或回退到内置 `model1.usdz`。
-- **ReplicaPlacementController**：通过 `AsyncStream` 向沉浸空间发送放置/清除数字复制品信号。
-- **HapticController / HapticCoordinator**：为已连接配件创建并恢复 `CHHapticEngine`，支持单脉冲与多脉冲模式。
-- **WorldOverlayView**：使用 `RealityView` 在混合沉浸空间中渲染锚点标记、参考模型与数字复制品。
+- **AccessoryConnectionManager**: Observes `GCSpatialAccessory.spatialAccessories`, manages connection state, and invokes callbacks when connected devices change.
+- **TrackingSessionManager**: Runs an `ARKitSession`, manages the `AccessoryTrackingProvider`, and exposes authorization status, tracking status, and the latest anchor.
+- **AccessoryTracker**: Combines connection, tracking, preview loading, and replica control behind a single interface for the view layer.
+- **PreviewLoader**: Loads the USDZ embedded in a `referenceaccessory` supplied by an accessory, or falls back to the bundled `model1.usdz`.
+- **ReplicaPlacementController**: Uses `AsyncStream` to send digital replica placement and removal signals to the immersive space.
+- **HapticController / HapticCoordinator**: Creates and restores a `CHHapticEngine` for the connected accessory, supporting both single-pulse and multi-pulse patterns.
+- **WorldOverlayView**: Uses `RealityView` to render anchor markers, the reference model, and digital replicas in a mixed immersive space.
 
-## 自定义配件支持
+## Custom Accessory Support
 
-如果你的 seeMote 配件提供自己的 USDZ 预览模型，可在 `PreviewLoader.PreviewModel` 中添加新的枚举 case，并加载对应资源。
+If your seeMote accessory supplies its own USDZ preview model, add a new enum case to `PreviewLoader.PreviewModel` and load the corresponding resource.
 
+## License
 
-
-## 许可证
-
-本工程由 seeMote 提供，作为面向开发者的参考实现。
+This project is provided by seeMote as a reference implementation for developers.
